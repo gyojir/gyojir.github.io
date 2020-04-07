@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.root">
     <h1>about</h1>
-    <p>管睆人：gyojir</p>
+    <p>管理人：gyojir</p>
   </div>
 </template>
 

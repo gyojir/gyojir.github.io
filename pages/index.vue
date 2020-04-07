@@ -3,6 +3,8 @@
     <div :class="$style.title">
       <h1>gyojirの</h1>
     </div>
+    
+    <br>
 
     <h2>ようこそ！</h2>
     <p>4コマ漫画とかあるから見てってちょ</p>

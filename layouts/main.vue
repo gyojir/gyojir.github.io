@@ -33,7 +33,7 @@ export default {
 	min-height: 80vh;
 	width: 80%;
 	margin: 0 auto;
-	padding: 1rem 2rem;
+	padding: 0rem 2rem 2rem 2rem;
 	box-shadow: 0rem 0rem 0.4rem rgba(0,0,0,0.5);
 	background-color: white;
 }
