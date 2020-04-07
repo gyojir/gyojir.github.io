@@ -69,7 +69,8 @@ ul {
 export default {
   layout: 'main',
   head: {
-    title: 'gyojir'
+    title: 'gyojir',
+    titleTemplate: ''
   }
 }
 </script>

@@ -16,7 +16,7 @@ export default {
   layout: 'main',
   head () {
     return {
-      title: 'gyojir | ' + this.$route.name
+      title: this.$route.name
     }
   }
 }
