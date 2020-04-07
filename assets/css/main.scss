@@ -1,0 +1,16 @@
+html, body, #__nuxt, #__layout {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a {
+  color: #1EAEDB;
+}
