@@ -3,7 +3,7 @@
     <span>&nbsp;</span>
     <li :class="$style.item" v-for='(crumb, i) in path_array' :key="i">
       <span v-if="crumb.path !== $nuxt.$route.path"><nuxt-link :to="crumb.path" >{{ crumb.name }}</nuxt-link></span>
-      <span v-else>{{ crumb.name }}</span>
+      <span v-else>{{ crumb.name.replace(/\//g,"") }}</span>
     </li>
   </ul>
 </template>
@@ -20,7 +20,7 @@ export default {
       if(this.path === "/"){
         return [];
       }
-      const arr = this.path.split("/");
+      const arr = this.path.split(/\/(?!$)/);
       return arr.map((e,i)=>({name: e || "Home", path: arr.slice(0,i+1).join("/") || "/"}));
     }
   }
@@ -31,7 +31,6 @@ export default {
 .list {
   list-style: none;
   text-align: left;
-  margin: 0;
 }
 .item {
   display: inline-block;
