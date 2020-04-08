@@ -31,6 +31,7 @@ export default {
 .list {
   list-style: none;
   text-align: left;
+  padding: 0;
 }
 .item {
   display: inline-block;

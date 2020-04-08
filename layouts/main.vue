@@ -62,7 +62,7 @@ export default {
 	}
 	
 	.breadcrumbs{
-		width: 90%;
+		width: 97%;
 	}
 }
 </style>
