@@ -14,3 +14,11 @@ div, ul, dl {
 a {
   color: #1EAEDB;
 }
+
+/* 再描画ちらつき対策 */
+html {
+  visibility: hidden;
+}
+html.wf-active {
+  visibility: visible;
+}
