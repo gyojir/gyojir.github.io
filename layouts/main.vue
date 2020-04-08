@@ -30,7 +30,7 @@ export default {
 
 .container{
 	border-radius: 0.4rem;
-	min-height: 80vh;
+	min-height: 75vh;
 	width: 80%;
 	margin: 0 auto;
 	padding: 0rem 2rem 2rem 2rem;
@@ -58,6 +58,7 @@ export default {
 @media screen and (max-width : 768px) {
 	.container{
 		width: 97%;
+		padding: 0rem 0.5rem 2rem 0.5rem;
 	}
 	
 	.breadcrumbs{

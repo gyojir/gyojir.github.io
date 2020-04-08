@@ -59,7 +59,7 @@ ul {
 }
 
 .root{
-	width: 100%;
+  width: 100%;
 }
 
 .title{
