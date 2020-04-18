@@ -21,7 +21,7 @@
     <br>
 
     <dl :class="$style.sub_dl">
-      <dt><a href='http://blog.gyojir.com'>blog</a></dt>
+      <dt><a href='https://blog.gyojir.com'>blog</a></dt>
       <dt><nuxt-link to='/links'>links</nuxt-link></dt>
       <dt><nuxt-link to='/about'>about</nuxt-link></dt>
       <dt><nuxt-link to='/contact'>contact</nuxt-link></dt>
