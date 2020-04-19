@@ -18,4 +18,9 @@ module.exports = {
       families: ['Noto+Sans+JP', 'Roboto']
     }
   },
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-110333905-1'
+    }]
+  ]
 }
