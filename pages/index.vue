@@ -12,7 +12,7 @@
     <br>
     
     <dl :class="$style.main_dl">
-      <dt><a href='https://gyojir.com/mangas'>4コマ漫画</a></dt>
+      <dt><nuxt-link to='/mangas'>4コマ漫画</nuxt-link></dt>
       <dd>4コマ漫画を描いているよ</dd>
       <dt><nuxt-link to='/tools'>tools</nuxt-link></dt>
       <dd>何かツール</dd>
