@@ -67,12 +67,9 @@ ul {
 }
 </style>
 
-<script>
-export default {
-  layout: 'main',
-  head: {
-    title: 'gyojir',
-    titleTemplate: ''
-  }
-}
+<script setup>
+definePageMeta({layout: 'main'})
+useHead({
+  title: 'gyojir'
+})
 </script>

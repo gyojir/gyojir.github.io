@@ -1,8 +1,8 @@
 <template>
   <div :class="$style.root">
-		<breadcrumb :class="$style.breadcrumbs" :path="$nuxt.$route.path"/>
+		<breadcrumb :class="$style.breadcrumbs" :path="$route.path"/>
     <div :class="$style.container">
-      <nuxt/>
+      <slot />
     </div>
 		<footer :class="$style.footer">
 			<p>&copy; 2017-2020 gyojir</p>
@@ -11,11 +11,10 @@
 </template>
 
 <script>
-import breadcrumb from '@/components/breadcrumb.vue'
 export default {
-	components: {
-		breadcrumb
-	}
+  setup() {
+    const route = useRoute();
+  },
 }
 </script>
 

@@ -2,7 +2,7 @@
   <ul :class="$style.list">
     <span>&nbsp;</span>
     <li :class="$style.item" v-for='(crumb, i) in path_array' :key="i">
-      <span v-if="crumb.path !== $nuxt.$route.path"><nuxt-link :to="crumb.path" >{{ crumb.name }}</nuxt-link></span>
+      <span v-if="crumb.path !== $route.path"><nuxt-link :to="crumb.path" >{{ crumb.name }}</nuxt-link></span>
       <span v-else>{{ crumb.name.replace(/\//g,"") }}</span>
     </li>
   </ul>
@@ -10,6 +10,9 @@
   
 <script>
 export default {
+  setup() {
+    const route = useRoute();
+  },
   props: {
     path: {
       type: String

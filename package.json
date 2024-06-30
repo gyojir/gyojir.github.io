@@ -1,22 +1,21 @@
 {
   "name": "gyojir.github.io",
   "scripts": {
-    "dev": "nuxt --port 3333 --hostname 0.0.0.0",
-    "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+    "dev": "nuxt dev --port 3333 --host 0.0.0.0",
+    "generate": "nuxt build --preset github_pages",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup --verbose"
   },
   "dependencies": {
-    "nuxt": "^2.12.2",
-    "nuxt-webfontloader": "^1.1.0"
+    "nuxt": "^3.12.2"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.2.3",
-    "node-sass": "^4.13.1",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "normalize.css": "^8.0.1",
+    "nuxt-gtag": "^2.0.6",
     "push-dir": "^0.4.1",
-    "sass-loader": "^8.0.2"
+    "sass": "^1.77.6"
   },
   "engines": {
-    "node": "10.x"
+    "node": "20.x"
   }
 }

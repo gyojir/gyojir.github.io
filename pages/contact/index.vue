@@ -11,13 +11,10 @@
 }
 </style>
 
-<script>
-export default {
-  layout: 'main',
-  head () {
-    return {
-      title: this.$route.name
-    }
-  }
-}
+<script setup>
+const route = useRoute();
+definePageMeta({layout: 'main'})
+useHead({
+  title: route.name
+})
 </script>

@@ -1,4 +1,4 @@
-module.exports = {
+export default defineNuxtConfig({
   css: [
     'normalize.css',
     '@/assets/css/main.scss'
@@ -11,16 +11,16 @@ module.exports = {
     ]
   },
   modules: [
-    'nuxt-webfontloader'
+    '@nuxtjs/google-fonts',
+    'nuxt-gtag',
   ],
-  webfontloader: {
-    google: {
-      families: ['Noto+Sans+JP', 'Roboto']
-    }
+  googleFonts: {
+    families: {
+      'Noto+Sans+JP': true,
+      'Roboto': true
+    },
   },
-  buildModules: [
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-110333905-1'
-    }]
-  ]
-}
+  gtag: {
+    id: 'G-YLDS0L17KF',
+  },
+})
