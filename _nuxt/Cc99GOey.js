@@ -1,0 +1,1 @@
+import{_ as t,f as a,u as c,c as n,n as _,o as r,a as s}from"./BWOIcnx8.js";const l="_root_gqrwc_1",u={root:l},d=s("h1",null,"about",-1),i=s("p",null,"管理人：gyojir",-1),p=[d,i],m={__name:"index",setup(h){const o=a();return c({title:o.name}),(e,x)=>(r(),n("div",{class:_(e.$style.root)},p,2))}},f={$style:u},B=t(m,[["__cssModules",f]]);export{B as default};
